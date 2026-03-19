@@ -1,0 +1,33 @@
+This is a log of everything ive learnt throughout this project, 
+including problems and how ive overcome them and built on my knowledge in the process.
+
+This log is designed to keep track of development and hopefully
+demonstrate my engagement and commitment to learn.
+
+Please see "README.md" if you want more infomation.
+
+19/3/26 (0.1.0-alpha.1)
+
+I have pushed the first version of Ipython_History_Manager to github remote repo
+
+The first version works by finding the current directory and manouvering to the directory
+holding the history file. This does not work, Ipython runs startup programs from within the
+directory it is running in, NOT from within the startup directory itself.
+
+A big change needs to happen in how the directory containing the history SQL file is accessed.
+    possible solutions:
+     - the user could enter/edit the directory themselves
+            this would require some knowledge about accessing directory paths and editing 
+            python/config files. However directions for this can be added in the "README.md".
+
+    - navigating from the route directory to the ipytohn direcotory from searches.
+            HUGE risk to user security (All their files are being searched through!!).
+            And would be incredibly slow
+
+    - running an initialisation/installation program that finds the directory itself.
+            increases complexity. But is simple (requires no more knowledge then finding the
+            startup file) And offers an opportunity for the user to enter their own custom directory 
+            (option one) or select options for customisation with the storage and managment of the 
+            history file. <-- could be better than a config.
+
+
