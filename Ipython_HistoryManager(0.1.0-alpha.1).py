@@ -24,4 +24,3 @@ for i in range (len(Path_List)): # for loop to generate list from the path to th
 string += "history.sqlite" #concatenates the file onto the file path
 
 os.remove(string) # deletes the history.sqlite file
-
