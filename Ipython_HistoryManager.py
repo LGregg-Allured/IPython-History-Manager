@@ -3,6 +3,7 @@
 #leogreggallured@gmail.com
 
 #Version: 0.1.0-alpha.1
+#Build n0: 1
 #Last edited: 3/3/26
 
 #notes for myself:
