@@ -3,8 +3,8 @@
 #leogreggallured@gmail.com
 #https://github.com/LGregg-Allured/IPython-History-Manager
 
-#Version: 0.2.1
-#Build n0: 5
+#Version: 0.2.2
+#Build n0: 6
 
 #imports
 
@@ -18,7 +18,7 @@ with open("config.toml","rb") as f:
 path = config['path'] #defining the path to variable "path"
 
 #delete the histroy.sqlite file
-#os.remove(path+"/history.sqlite") # concatenates path and "..." to get the path to the history file.
+os.remove(path+"/history.sqlite") # concatenates path and "..." to get the path to the history file.
 
 #import variables:
 
