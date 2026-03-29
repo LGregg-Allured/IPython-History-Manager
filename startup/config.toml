@@ -4,7 +4,9 @@
 path = "/home/user/.ipython/profile" #path to default profile directory
 
 #python modules to be auto imported
-modules = []
+modules = ["os", "scipy","matplotlib.pyplot"]
 
 #variables to be auto loaded (such as scientific constants)
-variables = []
+[variables]
+pi = 3.14159
+e = 1.6e-19

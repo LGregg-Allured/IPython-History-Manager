@@ -2,7 +2,7 @@
 #Leo Gregg-Allured
 #leogreggallured@gmail.com
 
-#Version: 0.2.0-alpha.1
+#Version: 0.2.1-alpha.1
 #Build n0: 2
 
 #imports
@@ -18,3 +18,10 @@ path = config['path']
 
 #delete the histroy.sqlite file
 os.remove(path+"/history.sqlite")
+
+#import variables:
+
+variables = config['variables']
+
+for name, value in variables.items():
+    globals()[name] = value   
