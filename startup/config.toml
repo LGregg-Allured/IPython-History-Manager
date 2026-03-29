@@ -1,6 +1,6 @@
 #Config file for Ipython_HistoryManager
 #https://github.com/LGregg-Allured/IPython-History-Manager
-#Version: 0.2.1
+#Version: 0.2.2
 
 path = "/home/user/.ipython/profile" #path to default profile directory
 
