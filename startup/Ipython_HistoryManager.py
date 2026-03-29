@@ -2,25 +2,19 @@
 #Leo Gregg-Allured
 #leogreggallured@gmail.com
 
-#Version: 0.1.0-alpha.1
-#Build n0: 1
+#Version: 0.2.0-alpha.1
+#Build n0: 2
 
-#notes for myself:
-#Better variable names for ("string"), etc
+#imports
 
+import tomllib
 import os
 
-#Clearing the old history:
+#load infomation from the config file
+with open("config.toml","rb") as f:
+    config = tomllib.load(f)
 
-#navigating to the location of history file: 
+path = config['path']
 
-Path = os.getcwd() #gets the path to the startup directory
-Path_List = Path.split(os.sep)# converts path to a list
-Path_List.pop(len(Path_List)-1)#removes the last directory in the list
-
-string = ("") 
-for i in range (len(Path_List)): # for loop to generate list from the path to the ipython directory
-    string += (Path_List[i]) + "/" # defines the string as the path list items concatenated with "/" to create a string of the path to history file
-string += "history.sqlite" #concatenates the file onto the file path
-
-os.remove(string) # deletes the history.sqlite file
+#delete the histroy.sqlite file
+os.remove(path+"/history.sqlite")

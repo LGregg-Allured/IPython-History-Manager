@@ -1,0 +1,10 @@
+#Config file for Ipython_HistoryManager
+#https://github.com/LGregg-Allured/IPython-History-Manager
+
+path = "/home/user/.ipython/profile" #path to default profile directory
+
+#python modules to be auto imported
+modules = []
+
+#variables to be auto loaded (such as scientific constants)
+variables = []
